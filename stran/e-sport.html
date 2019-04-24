@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="sl">
+	<head>
+		<meta charset="utf-8">
+		<title>RedBullRacing™</title>
+		<meta name="description" content="Red Bull Racing">
+		<meta name="keywords" content="redbull,racing,f1,formula">
+		<meta name="author" content="Nejc Dragar">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="redbullracing.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="icon" type="image/png" href="../grafika/favicon.png"/>
+	</head>
+
+	<body>
+		<div id="Main">
+			<header id="Header">
+					<a href="index.html"><img src="../grafika/logo.png" id="logo" alt="RedBullRacing"></a>
+
+					<div>
+						<h3>E-ŠPORT</h3>
+					</div>
+
+					<div id="shape">
+						<div class="SocialMedia">
+							<div class="IkoneContainer">
+								<a href="https://twitter.com/redbullesports" target="_blank">  
+									<img src="../grafika/twitter.png" alt="Twitter" class="Ikone">	
+								</a>
+							</div>	
+							<div class="IkoneContainer">
+								<a href="https://www.facebook.com/RedBullRacingEsports/" target="_blank">
+									<img src="../grafika/facebook.png" alt="Facebook" class="Ikone">
+								</a>
+							</div>
+							<div class="IkoneContainer">
+								<a href="https://www.instagram.com/redbullracingesports/" target="_blank">
+									<img src="../grafika/instagram.png" alt="Instagram" class="Ikone">
+								</a>
+							</div>
+							<div class="IkoneContainer">
+								<a href="https://www.youtube.com/user/RedBulleSport" target="_blank">
+									<img src="../grafika/youtube.png" alt="Youtube" class="Ikone">
+								</a>
+							</div>
+						</div>
+					</div>
+			</header>
+			
+				<nav id="Navigacija">
+					<ul id="list">
+		                <li><a href="./index.html" title="DOMOV" target="_self">DOMOV</a></li>
+		                <li><a href="./dirke.html" title="DIRKE" target="_self">DIRKE</a></li>
+		                <li><a href="./vozniki.html" title="VOZNIKI" target="_self">VOZNIKI</a></li>
+		                <li><a href="./ekipa.html" title="EKIPA" target="_self">EKIPA</a></li>
+		                <li><a href="./e-sport.html" title="E-ŠPORT" target="_self">E-ŠPORT</a></li>
+		            </ul>
+		            <img src="../grafika/navigacija.svg" id="navigation">	
+				</nav>
+
+				<article>
+
+					<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					  <img src="../grafika/g2-esports.jpg" style="width:100%" class="SlideshowSlike">
+					  <div class="text"><div id="TextNaslov4"><b>NOVICE:</b>&nbsp;Ponovna zmaga ekipe G2 Esports!</div></div>
+					</div>
+
+					<div class="mySlides fade">
+					  <img src="../grafika/prvazmaga.jpg" style="width:100%" class="SlideshowSlike">
+					  <div class="text prvazmaga"><div id="TextNaslov5"><b>NOVICE:</b>&nbsp;Prva dirka, prva zmaga!</div></div>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					</div>
+
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+						      slides[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+						      dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						}
+					</script>
+
+				</article>
+
+				<div><img src="../grafika/vmesnacrta.svg" id="VmesnaCrta1"></div>
+
+				<main class="Vsebina E-sport">
+					<iframe width="900" height="430"
+					src="https://www.youtube.com/embed/pzvsD7PKgC8">
+					</iframe>
+				</main>
+
+				<div><img src="../grafika/vmesnacrta2.svg" id="VmesnaCrta2"></div>
+
+				<footer id="Footer">
+					<h1>Aston Martin Red Bull Racing © 2019</h1>
+					<div class="SocialMediaFooter">
+						<div class="IkoneContainer">
+							<a href="https://twitter.com/redbullracing" target="_blank">  
+								<img src="../grafika/twitter.png" alt="Twitter" class="Ikone">	
+							</a>
+						</div>	
+						<div class="IkoneContainer">
+							<a href="https://www.facebook.com/redbullracing/" target="_blank">
+								<img src="../grafika/facebook.png" alt="Facebook" class="Ikone">
+							</a>
+						</div>
+						<div class="IkoneContainer">
+							<a href="https://www.instagram.com/redbullracing/" target="_blank">
+								<img src="../grafika/instagram.png" alt="Instagram" class="Ikone">
+							</a>
+						</div>
+						<div class="IkoneContainer">
+							<a href="https://www.youtube.com/user/redbullracing" target="_blank">
+								<img src="../grafika/youtube.png" alt="Youtube" class="Ikone">
+							</a>
+						</div>
+					</div>
+				</footer>
+
+
+
+
+		</div>
+	</body>
+</html>
